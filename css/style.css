@@ -5,6 +5,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*style for the header's image*/
 #header-content::after {
     content:'';
     height: 100vh;
@@ -14,4 +15,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
+    filter: blur(10px);
+    transition: all 1000ms;
+}
+
+#header-content:hover::after {
+    filter: blur(0px);
 }
